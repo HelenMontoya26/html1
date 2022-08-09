@@ -1,0 +1,34 @@
+'''La oficina de incorporación del ejercito necesita un algoritmo que le pueda permitir
+saber si un aspirante a ingresar a la institución como soldado es apto o no para poder
+vincularlo. Para que una persona sea apta, debe cumplir los siguientes requisitos:
+o Si es mujer, su estatura debe ser superior a 1.60 más y su edad debe
+estar entre 20 y 25 años.
+o Si el aspirante es hombre, se estatura debe ser superior a 1.65 más y
+su edad debe estar entre los 18 y 24 años.
+o Tanto mujeres como hombres deben ser solteros. Diseñe el algoritmo
+de tal forma que permita informar si un aspirante es apto o no para
+ingresar al ejército.'''
+
+
+
+estado=input("Indeque su estado civil poniendo una C si es casdao o S si es soltero: ")
+genero=input("Indique su genero: ")
+edad=input("Indique su edad: ")
+estatura=input("Indique su estatura: ")
+
+if estado=="S":
+    if genero=="F":
+        if estatura>1.60 and (edad>=20 and edad<25):
+            print("Usted es apta para ingrear al ejercito")
+        else:
+            print("Usted no puede ingresar al ejercito")
+    if genero=="M":
+        if estatura>1.65 and (edad>=18 and edad<24):
+            print("Usted puede ingresar al ejercito")
+        else:
+            print("Usted no puede ingresar al ejercito")
+else:
+    print("Usted no puede ingresar al ejercito")
+    
+    
+
